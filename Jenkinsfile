@@ -31,8 +31,8 @@ pipeline {
       steps {
         echo 'Running Java Application'
         bat '''
-        docker rm -f myjavaproj-container || exit 0
-        docker run --name myjavaproj-container myjavaproj:1.0
+        docker rm -f myjavaproj-container1 || exit 0
+        docker run --name myjavaproj-container1 myjavaproj:1.0
         
         '''               
       }
